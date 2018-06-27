@@ -19,14 +19,31 @@ public class StatePatternEx {
     public static void main(String[] args) {
         // TODO code application logic here
         DrinkWithoutChange initialState = new DrinkWithoutChange();
+        Drinks pepsi = new Drinks("Pepsi", 3, 40, initialState);
+        Drinks fanta = new Drinks("Fanta", 2, 50, initialState);
+        Drinks dew = new Drinks("Mountain Dew", 3, 60, initialState);
+        Drinks myDrink = new Drinks();
         VendingMachine vm = new VendingMachine(initialState);
         Scanner input = new Scanner(System.in);
-        int cash;
+        int cash, choice;
 //First time press
         while(true){
-            System.out.println("Want a drink? please enter cash: ");
+            System.out.println("\nAvailable Drinks:");
+            System.out.println("1.Pepsi  2.Fanta  3.Mountain Dew");
+            System.out.println("Please press the corresponding number of the drinks mentioned above:");
+            choice = input.nextInt();
+            System.out.println("Please deposit money now!");
             cash = input.nextInt();
-            vm.pressButton(cash);
+            if(choice==1){
+                myDrink = pepsi;
+            }
+            else if(choice==2){
+                myDrink = fanta;
+            }
+            else if(choice==3){
+                myDrink = dew;
+            }
+            myDrink.pressButton(vm, myDrink, cash);
         }
     }
 

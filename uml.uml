@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="327.0256510416666" y="623.0">StatePatternEx</node>
+    <node x="224.95455729166662" y="198.0">VendingMachine</node>
+    <node x="153.34557291666667" y="455.0">DrinkWithChange</node>
+    <node x="38.019475446428544" y="376.0">InsufficientBalance</node>
+    <node x="7.012239583333326" y="544.0">DrinkWithoutChange</node>
+    <node x="60.519475446428544" y="287.0">NoDrink</node>
+    <node x="186.01947544642854" y="0.0">Drinks</node>
+    <node x="150.51947544642854" y="109.0">StateControl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="InsufficientBalance" target="StateControl">
+      <point x="18.5" y="-14.5" />
+      <point x="130.51947544642854" y="346.0" />
+      <point x="166.01223958333333" y="346.0" />
+      <point x="166.01223958333333" y="178.0" />
+      <point x="191.23376116071427" y="178.0" />
+      <point x="-16.285714285714278" y="14.5" />
+    </edge>
+    <edge source="DrinkWithoutChange" target="Drinks">
+      <point x="-70.0" y="-14.5" />
+      <point x="17.012239583333326" y="524.0" />
+      <point x="0.0" y="524.0" />
+      <point x="0.0" y="49.0" />
+      <point x="190.06947544642856" y="49.0" />
+      <point x="-36.44999999999999" y="14.5" />
+    </edge>
+    <edge source="DrinkWithChange" target="InsufficientBalance">
+      <point x="-59.166666666666686" y="-14.5" />
+      <point x="165.17890624999998" y="435.0" />
+      <point x="130.51947544642854" y="435.0" />
+      <point x="18.5" y="14.5" />
+    </edge>
+    <edge source="StatePatternEx" target="DrinkWithoutChange">
+      <point x="-51.25" y="-14.5" />
+      <point x="337.2756510416666" y="603.0" />
+      <point x="47.012239583333326" y="603.0" />
+      <point x="-40.0" y="14.5" />
+    </edge>
+    <edge source="DrinkWithoutChange" target="NoDrink">
+      <point x="-30.0" y="-14.5" />
+      <point x="57.012239583333326" y="504.0" />
+      <point x="27.519475446428544" y="504.0" />
+      <point x="27.519475446428544" y="356.0" />
+      <point x="75.85280877976186" y="356.0" />
+      <point x="-30.666666666666686" y="14.5" />
+    </edge>
+    <edge source="Drinks" target="StateControl">
+      <point x="-4.050000000000011" y="14.5" />
+      <point x="222.46947544642853" y="89.0" />
+      <point x="207.51947544642854" y="89.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="DrinkWithoutChange" target="InsufficientBalance">
+      <point x="10.0" y="-14.5" />
+      <point x="97.01223958333333" y="524.0" />
+      <point x="87.91666666666666" y="524.0" />
+      <point x="87.91666666666666" y="435.0" />
+      <point x="93.51947544642854" y="435.0" />
+      <point x="-18.5" y="14.5" />
+    </edge>
+    <edge source="NoDrink" target="StateControl">
+      <point x="0.0" y="-14.5" />
+      <point x="106.51947544642854" y="267.0" />
+      <point x="96.6861421130952" y="267.0" />
+      <point x="96.6861421130952" y="168.0" />
+      <point x="174.94804687499996" y="168.0" />
+      <point x="-32.57142857142857" y="14.5" />
+    </edge>
+    <edge source="InsufficientBalance" target="DrinkWithChange">
+      <point x="55.5" y="14.5" />
+      <point x="167.51947544642854" y="425.0" />
+      <point x="188.84557291666664" y="425.0" />
+      <point x="-35.500000000000014" y="-14.5" />
+    </edge>
+    <edge source="InsufficientBalance" target="VendingMachine">
+      <point x="55.5" y="-14.5" />
+      <point x="167.51947544642854" y="356.0" />
+      <point x="177.01223958333333" y="356.0" />
+      <point x="177.01223958333333" y="267.0" />
+      <point x="259.4545572916666" y="267.0" />
+      <point x="-34.5" y="14.5" />
+    </edge>
+    <edge source="DrinkWithoutChange" target="VendingMachine">
+      <point x="70.0" y="-14.5" />
+      <point x="157.01223958333333" y="524.0" />
+      <point x="384.4545572916666" y="524.0" />
+      <point x="384.4545572916666" y="267.0" />
+      <point x="305.4545572916666" y="267.0" />
+      <point x="11.5" y="14.5" />
+    </edge>
+    <edge source="VendingMachine" target="StateControl">
+      <point x="-17.25" y="-14.5" />
+      <point x="276.7045572916666" y="168.0" />
+      <point x="240.09090401785716" y="168.0" />
+      <point x="32.57142857142861" y="14.5" />
+    </edge>
+    <edge source="DrinkWithChange" target="DrinkWithoutChange">
+      <point x="35.5" y="14.5" />
+      <point x="259.8455729166667" y="514.0" />
+      <point x="137.01223958333333" y="514.0" />
+      <point x="50.0" y="-14.5" />
+    </edge>
+    <edge source="NoDrink" target="Drinks">
+      <point x="-30.666666666666686" y="-14.5" />
+      <point x="75.85280877976186" y="267.0" />
+      <point x="85.6861421130952" y="267.0" />
+      <point x="85.6861421130952" y="69.0" />
+      <point x="206.26947544642854" y="69.0" />
+      <point x="-20.25" y="14.5" />
+    </edge>
+    <edge source="InsufficientBalance" target="DrinkWithoutChange">
+      <point x="-55.5" y="14.5" />
+      <point x="56.519475446428544" y="435.0" />
+      <point x="62.44231770833326" y="435.0" />
+      <point x="62.44231770833326" y="524.0" />
+      <point x="77.01223958333333" y="524.0" />
+      <point x="-10.0" y="-14.5" />
+    </edge>
+    <edge source="DrinkWithChange" target="StateControl">
+      <point x="11.833333333333314" y="-14.5" />
+      <point x="236.17890624999998" y="425.0" />
+      <point x="214.45455729166662" y="425.0" />
+      <point x="214.45455729166662" y="178.0" />
+      <point x="207.51947544642854" y="178.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="StatePatternEx" target="Drinks">
+      <point x="30.75" y="-14.5" />
+      <point x="419.2756510416666" y="603.0" />
+      <point x="420.9361421130952" y="603.0" />
+      <point x="420.9361421130952" y="59.0" />
+      <point x="254.8694754464285" y="59.0" />
+      <point x="28.349999999999966" y="14.5" />
+    </edge>
+    <edge source="InsufficientBalance" target="Drinks">
+      <point x="-55.5" y="-14.5" />
+      <point x="56.519475446428544" y="346.0" />
+      <point x="50.019475446428544" y="346.0" />
+      <point x="50.019475446428544" y="59.0" />
+      <point x="198.16947544642852" y="59.0" />
+      <point x="-28.349999999999994" y="14.5" />
+    </edge>
+    <edge source="DrinkWithChange" target="NoDrink">
+      <point x="-11.833333333333343" y="-14.5" />
+      <point x="212.51223958333333" y="435.0" />
+      <point x="196.51947544642854" y="435.0" />
+      <point x="196.51947544642854" y="336.0" />
+      <point x="137.1861421130952" y="336.0" />
+      <point x="30.666666666666657" y="14.5" />
+    </edge>
+    <edge source="InsufficientBalance" target="NoDrink">
+      <point x="-18.5" y="-14.5" />
+      <point x="93.51947544642854" y="356.0" />
+      <point x="106.51947544642854" y="356.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="DrinkWithChange" target="Drinks">
+      <point x="59.166666666666686" y="-14.5" />
+      <point x="283.5122395833333" y="435.0" />
+      <point x="373.4545572916666" y="435.0" />
+      <point x="373.4545572916666" y="69.0" />
+      <point x="246.76947544642854" y="69.0" />
+      <point x="20.25" y="14.5" />
+    </edge>
+    <edge source="DrinkWithoutChange" target="StateControl">
+      <point x="-50.0" y="-14.5" />
+      <point x="37.012239583333326" y="514.0" />
+      <point x="11.0" y="514.0" />
+      <point x="11.0" y="158.0" />
+      <point x="158.66233258928565" y="158.0" />
+      <point x="-48.85714285714286" y="14.5" />
+    </edge>
+    <edge source="StatePatternEx" target="VendingMachine">
+      <point x="10.25" y="-14.5" />
+      <point x="398.7756510416666" y="603.0" />
+      <point x="409.9361421130952" y="603.0" />
+      <point x="409.9361421130952" y="247.0" />
+      <point x="351.4545572916666" y="247.0" />
+      <point x="57.5" y="14.5" />
+    </edge>
+    <edge source="DrinkWithChange" target="VendingMachine">
+      <point x="35.5" y="-14.5" />
+      <point x="259.8455729166667" y="425.0" />
+      <point x="282.4545572916666" y="425.0" />
+      <point x="-11.5" y="14.5" />
+    </edge>
+    <edge source="NoDrink" target="VendingMachine">
+      <point x="30.666666666666657" y="-14.5" />
+      <point x="137.1861421130952" y="257.0" />
+      <point x="236.45455729166662" y="257.0" />
+      <point x="-57.5" y="14.5" />
+    </edge>
+    <edge source="DrinkWithoutChange" target="DrinkWithChange">
+      <point x="30.0" y="-14.5" />
+      <point x="117.01223958333333" y="504.0" />
+      <point x="188.84557291666667" y="504.0" />
+      <point x="-35.5" y="14.5" />
+    </edge>
+    <edge source="StateControl" target="Drinks">
+      <point x="-38.0" y="-14.5" />
+      <point x="169.51947544642854" y="79.0" />
+      <point x="214.3694754464285" y="79.0" />
+      <point x="-12.150000000000006" y="14.5" />
+    </edge>
+    <edge source="Drinks" target="VendingMachine">
+      <point x="12.149999999999977" y="14.5" />
+      <point x="238.66947544642852" y="79.0" />
+      <point x="338.76947544642854" y="79.0" />
+      <point x="338.76947544642854" y="178.0" />
+      <point x="345.7045572916666" y="178.0" />
+      <point x="51.75" y="-14.5" />
+    </edge>
+    <edge source="StateControl" target="VendingMachine">
+      <point x="48.85714285714289" y="14.5" />
+      <point x="256.37661830357143" y="158.0" />
+      <point x="311.2045572916666" y="158.0" />
+      <point x="17.25" y="-14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5773809523809523" x="195.5" y="326.00000000000006" />
+  <SelectedNodes>
+    <node>InsufficientBalance</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

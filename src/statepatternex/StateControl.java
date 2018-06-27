@@ -11,5 +11,5 @@ package statepatternex;
  */
 public abstract class StateControl {
 
-    public abstract void pressSwitch(VendingMachine context, int money);
+    public abstract void pressSwitch(VendingMachine context, Drinks drink, int money);
 }

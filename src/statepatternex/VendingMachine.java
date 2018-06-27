@@ -12,7 +12,6 @@ package statepatternex;
 public class VendingMachine {
 
     private StateControl state;
-    private int quantity = 2;
     private int balance = 100;
 
     public int getBalance() {
@@ -21,14 +20,6 @@ public class VendingMachine {
 
     public void setBalance(int balance) {
         this.balance = balance;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public StateControl getState() {
@@ -42,8 +33,5 @@ public class VendingMachine {
     public VendingMachine(StateControl state) {
         this.state = state;
     }
-
-    public void pressButton(int money) {
-        state.pressSwitch(this, money);
-    }
+    
 }
